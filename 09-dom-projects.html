@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title> Document Object Model  </title>
+    </head>
+    <body>
+    <p>Youtube Subscribe Button</p>
+    <button class="sub" onclick="
+      sub();
+    ">Subscribe</button>
+  
+    <p>Rock Paper Scissor</p>
+    <a href="09-RPSUpdate.html">Click here</a>
+    <p>Amazon Shipping Calculator</p>
+    <p>Orders under $40 = +$10 shipping.</p>
+    <p>Orders over $40 = FREE shipping.</p>
+
+    <input placeholder="Cost of Order"
+    class="js-cost-input" onkeydown=" checkEnter()
+
+    ">
+    
+    
+    <button onclick="
+    calculateTotal();
+      
+      ">Calculate</button>
+      <p class="output"></p>
+
+
+      <script>
+
+        function checkEnter(){
+          if(event.key === 'Enter'){
+          calculateTotal();
+    }
+        }
+        function calculateTotal(){
+         const inputElement = document.querySelector('.js-cost-input')
+         let value = inputElement.value;
+
+         if(value > 0 && value <= 40){
+
+          document.querySelector('.output').innerHTML = `Total cost: $${Number(value) + 10}`
+         } else if(value > 40){
+          document.querySelector('.output').innerHTML = `Total cost: $${value}`
+         } else if(value < 0){
+          document.querySelector('.output').innerHTML = `No negative numbers`
+         }
+         else {
+           document.querySelector('.output').innerHTML = `Not valid input`
+         }
+
+        }
+
+        function sub(){
+          const buttonE = document.querySelector('.sub');
+
+          if(buttonE.innerText === 'Subscribe'){
+            buttonE.innerHTML = 'Subscribed'
+          } else {
+            buttonE.innerHTML = 'Subscribe'
+          }
+        }
+
+      </script>
+    </body>
+  </html>
