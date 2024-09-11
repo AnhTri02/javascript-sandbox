@@ -1,0 +1,38 @@
+.js-name-input, .js-due-date-input{
+  font-size: 15px;
+  padding: 10px;
+}
+
+
+.addButton{
+
+  background-color: green;
+  cursor: pointer;
+  border: none;
+  margin: 5px;
+  color:white;
+  font-size: 15px;
+}
+.deleteButton{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: darkred;
+  cursor: pointer;
+  border: none;
+  margin: 5px;
+  color:white;
+  font-size :15px;
+}
+.js-todo-grid{
+  display: grid;
+  grid-template-columns: 200px 170px 100px;
+  align-items: center;
+}
+.todo-input-grid{
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-bottom: 10px;
+  align-items: stretch;
+}
