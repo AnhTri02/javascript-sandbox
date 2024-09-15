@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Lesson excersise </title>
+</head>
+<body>
+
+
+<script>
+
+const multiply = (p1, p2) =>  p1*p2;
+console.log(multiply(6,6))
+
+const addNum = (array, num) => {
+    return array.map((value, index) => {
+       return value + num;
+    });
+}
+
+const multNum = (array, num) => {
+  return array.map((value, index) => {
+     return value * num;
+  });
+}
+
+console.log(addNum([1,2,3], 2));
+console.log(addNum([-2,-1,0,99], 2))
+console.log(multNum([2,3,4,5], 5));
+</script>
+</body>
+
+<script>
+
+</script>
+</html>
